@@ -4,6 +4,21 @@ Lanyon is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde
 
 ![Screenshot](https://raw.githubusercontent.com/alexandrevicenzi/lanyon/master/images/tn.png)
 
+## Features
+
+- Mobile First
+- Responsive
+- Semantic
+- SEO Best Practices
+- Open Graph
+- Rich Snippets (JSON-LD)
+- Customizable
+
+## Integrations
+
+- [Disqus](https://disqus.com/)
+- [Google Analytics](https://www.google.com/analytics/web/)
+
 ## Installation
 
 To install Lanyon as your default theme, first install this repository in the `themes/` directory:
@@ -22,7 +37,6 @@ at the top of the file.
 ```toml
 baseURL = "https://example.com"
 title = "Lanyon"
-author = "Author Name"
 languageCode = "en"
 enableInlineShortcodes = true
 
@@ -30,6 +44,7 @@ summarylength = 10
 enableEmoji = true
 
 [params]
+author = "Author Name"
 description = "My Blog"
 
 ## Set one of:
