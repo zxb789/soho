@@ -1,8 +1,8 @@
-# Lanyon
+# Soho
 
-Lanyon is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](https://github.com/spf13/hyde) and inspired by the success of [Flex](https://github.com/alexandrevicenzi/Flex).
+Soho is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](https://github.com/spf13/hyde) and inspired by the success of [Flex](https://github.com/alexandrevicenzi/Flex).
 
-![Screenshot](https://raw.githubusercontent.com/alexandrevicenzi/lanyon/master/images/tn.png)
+![Screenshot](https://raw.githubusercontent.com/alexandrevicenzi/soho/master/images/tn.png)
 
 ## Features
 
@@ -21,14 +21,14 @@ Lanyon is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde
 
 ## Installation
 
-To install Lanyon as your default theme, first install this repository in the `themes/` directory:
+To install Soho as your default theme, first install this repository in the `themes/` directory:
 
     $ cd themes/
-    $ git clone https://github.com/alexandrevicenzi/lanyon.git
+    $ git clone https://github.com/alexandrevicenzi/soho.git
 
-Second, specify `lanyon` as your default theme in the `config.toml` file. Just add the line
+Second, specify `soho` as your default theme in the `config.toml` file. Just add the line
 
-    theme = "lanyon"
+    theme = "soho"
 
 at the top of the file.
 
@@ -36,7 +36,7 @@ at the top of the file.
 
 ```toml
 baseURL = "https://example.com"
-title = "Lanyon"
+title = "Soho"
 languageCode = "en"
 enableInlineShortcodes = true
 
@@ -48,7 +48,7 @@ author = "Author Name"
 description = "My Blog"
 
 ## Set one of:
-# gravatar = "lanyon@example.com"
+# gravatar = "soho@example.com"
 profilePicture = "images/profile.png"
 
 copyright = "Author Name"

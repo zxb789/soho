@@ -1,6 +1,6 @@
-name = "Lanyon"
+name = "Soho"
 license = "MIT"
-licenselink = "https://github.com/alexandrevicenzi/lanyon/blob/master/LICENSE.md"
+licenselink = "https://github.com/alexandrevicenzi/soho/blob/master/LICENSE.md"
 description = "A minimalist and mobile first theme for Hugo"
 tags = ["blog", "responsive", "clean", "minimalist"]
 features = ["blog", "themes", "disqus", "analytics"]
