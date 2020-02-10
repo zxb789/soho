@@ -2,6 +2,8 @@
 
 Lanyon is a minimalist brazen two-column [hugo](https://gohugo.io) theme based on [Hyde](https://github.com/spf13/hyde) and inspired by the success of [Flex](https://github.com/alexandrevicenzi/Flex).
 
+![Screenshot](https://raw.githubusercontent.com/alexandrevicenzi/lanyon/master/images/tn.png)
+
 ## Installation
 
 To install Lanyon as your default theme, first install this repository in the `themes/` directory:
