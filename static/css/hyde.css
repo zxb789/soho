@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Roboto', Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -66,7 +66,6 @@ html {
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left;
   }
 }
 
@@ -79,8 +78,8 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 2.25rem;
+  font-weight: 400;
 }
 
 /* Sidebar nav */
@@ -99,22 +98,6 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
-/* Sticky sidebar
- *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
- */
-
-@media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right:  1rem;
-    bottom: 1rem;
-    left:   1rem;
-  }
-}
-
-
 /* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu
@@ -122,15 +105,35 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-top:    2rem;
+  padding-bottom: 2rem;
+  min-height: 50%;
 }
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.copyright {
+  font-size: .7rem;
+  text-align: center;
+}
+
+footer {
+  height: 40px;
+}
+
 
 @media (min-width: 48em) {
   .content {
     max-width: 38rem;
     margin-left: 20rem;
     margin-right: 2rem;
+    margin-bottom: -40px;
+    min-height: 100%;
   }
 }
 
@@ -141,110 +144,68 @@ a.sidebar-nav-item:focus {
   }
 }
 
-
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
-
-@media (min-width: 48em) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
+.img-circle {
+  border-radius: 50%;
 }
 
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
+.img-headshot {
+  border: 6px solid #fff;
+  height: 180px;
+  width: 180px;
 }
 
-
-
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
+.sidebar {
+  background-color: #49757a;
+  color: #fff;
 }
 
-/* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
+.sidebar a,
+.sidebar-about h1 {
+  color: #fff;
 }
 
-/* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
+footer a,
+.content a,
+.related-posts li a:hover {
+  color: #49757a;
 }
 
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
+.read-more-link {
+  margin-top: 1rem;
 }
 
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
+.read-more-link a {
+  padding: 8px 16px;
+  border: 1px solid;
+  border-color: #49757a;
+  border-radius: 4px;
 }
 
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
+.read-more-link a:hover {
+  text-decoration: none;
 }
 
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
+.pull-right {
+  float: right;
 }
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
+
+ul.posts {
+  list-style: none;
+}
+
+.social-icons,
+.sidebar nav {
+  margin-top: 1rem;
+}
+
+.social-icons a,
+.social-icons a:hover,
+.social-icons a:focus {
+  text-decoration: none !important;
 }

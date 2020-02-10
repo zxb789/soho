@@ -1,4 +1,4 @@
-.sidebar {
+.sidebar, .post-date {
   display: none !important;
 }
 

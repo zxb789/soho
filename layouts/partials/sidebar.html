@@ -1,21 +1,44 @@
 <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container">
     <div class="sidebar-about">
-      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
-      <p class="lead">
-      {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
-      </p>
+      {{ with .Site.Params.gravatar }}
+      <div class="author-image">
+        <img src="https://www.gravatar.com/avatar/{{md5 .}}?s=200&d=mp" class="img-circle img-headshot center" alt="Gravatar">
+      </div>
+      {{ else }}
+        {{ with .Site.Params.profilePicture }}
+        <div class="author-image">
+          <img src="{{ $.Site.BaseURL }}{{ . }}" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        {{ end }}
+      {{ end }}
+
+      <h1>{{ .Site.Title }}</h1>
+
+      {{ with .Site.Params.description }}
+      <p class="lead">{{.}}</p>
+      {{end}}
     </div>
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
+        <li>
+          <a href="{{ .Site.BaseURL }}">Home</a>
+        </li>
         {{ range .Site.Menus.main -}}
-          <li><a href="{{.URL}}"> {{ .Name }} </a></li>
+        <li>
+          <a href="{{.URL}}"> {{ .Name }} </a>
+        </li>
         {{- end }}
       </ul>
     </nav>
 
-    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
+    <section class="social-icons">
+      {{ range $item := .Site.Params.socialIcons }}
+      <a href="{{ $item.url }}" rel="me" title="{{ $item.title }}">
+        <i class="fab {{ $item.icon }}" aria-hidden="true"></i>
+      </a>
+      {{ end }}
+    </section>
   </div>
 </aside>
