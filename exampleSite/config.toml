@@ -1,12 +1,8 @@
-baseURL = "https://gohugo.io"
-title = "Hugo Themes"
-author = "Steve Francia"
-copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
-paginate = 3
+baseurl = "https://example.com/"
 languageCode = "en"
+title = "Soho Theme"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
-
 summarylength = 10
 enableEmoji = true
 
