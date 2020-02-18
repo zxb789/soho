@@ -117,12 +117,9 @@ body {
   width: 100%;
 }
 
-.copyright {
+footer {
   font-size: .7rem;
   text-align: center;
-}
-
-footer {
   height: 40px;
 }
 
