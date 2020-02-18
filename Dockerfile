@@ -1,3 +1,5 @@
-FROM golang:latest
+FROM alpine:latest
 
-RUN go get -v github.com/gohugoio/hugo
+RUN apk add hugo
+
+USER 1000:1000
