@@ -246,12 +246,13 @@ ul.posts {
 
 .pagination li a:hover {
   color: #fff;
-  background: rgba(67, 118, 122, 0.75);
+  background-color: #49757a;
+  opacity: 0.75;
 }
 
 .pagination li.active a {
   color: #fff;
-  background: #49757a;
+  background-color: #49757a;
 }
 
 .pagination li.disabled a {

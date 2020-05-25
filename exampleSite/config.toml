@@ -19,6 +19,9 @@ licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 builtWith = true
 mainSections = ["post"]
 
+## Set custom theme color.
+# themeColor = "#fc2803"
+
   [[params.socialIcons]]
   icon = "fa-linkedin"
   title = "Linkedin"
