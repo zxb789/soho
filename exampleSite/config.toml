@@ -5,15 +5,19 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 summarylength = 10
 enableEmoji = true
+paginate = 5
 
 [params]
-description = ""
+title = "Soho Theme"
+description = "Example Blog"
 # gravatar = "soho@example.com"
+images = ["images/profile.png"]
 profilePicture = "images/profile.png"
 copyright = "Author Name"
 license = "CC BY-SA 4.0"
 licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 builtWith = true
+mainSections = ["post"]
 
   [[params.socialIcons]]
   icon = "fa-linkedin"
@@ -23,12 +27,17 @@ builtWith = true
   [[params.socialIcons]]
   icon = "fa-github"
   title = "GitHub"
-  url = "#"
+  url = "https://github.com/alexandrevicenzi/soho"
 
   [[params.socialIcons]]
   icon = "fa-twitter"
   title = "Twitter"
   url = "#"
+
+[taxonomies]
+  series = "series"
+  category = "categories"
+  tag = "tags"
 
 [menu]
 
@@ -39,10 +48,28 @@ builtWith = true
   url = "/posts/"
 
   [[menu.main]]
+  name = "Categories"
+  weight = 200
+  identifier = "categories"
+  url = "/categories/"
+
+  [[menu.main]]
+  name = "Tags"
+  weight = 200
+  identifier = "tags"
+  url = "/tags/"
+
+  [[menu.main]]
   name = "About"
   identifier = "about"
-  weight = 300
+  weight = 10
   url = "/about/"
+
+  [[menu.main]]
+  name = "Contact"
+  identifier = "contact"
+  weight = 20
+  url = "/contact/"
 
 [markup]
 
