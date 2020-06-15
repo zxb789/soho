@@ -1,6 +1,6 @@
 +++
-Description = ""
-Tags = ["Development", "golang"]
-Categories = ["Development", "GoLang"]
-menu = "main"
+description = ""
+tags = ["Development", "golang"]
+categories = ["Development", "GoLang"]
+draft = false
 +++
