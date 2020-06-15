@@ -2,12 +2,12 @@
   <div>
     &copy; {{ $.Site.Params.Copyright }} {{ now.Format "2006"}}
 
-    {{ with $.Site.Params.License }}
+    {{ with $.Site.Params.License -}}
     &middot; <a href="{{ $.Site.Params.licenseURL }}" target="_blank">{{ . | safeHTML }}</a>
-    {{end}}
+    {{- end }}
 
-    {{ with $.Site.Params.BuiltWith }}
+    {{ with $.Site.Params.BuiltWith -}}
     &middot; Build with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://themes.gohugo.io/soho/" target="_blank">Soho</a> theme
-    {{end}}
+    {{- end }}
   </div>
 </footer>
