@@ -19,7 +19,6 @@ tags = [
 - Rich Snippets (JSON-LD)
 - Twitter Card
 - Pagination
-- Hidden Pages
 - Customizable
 - Support all [Hugo Internals](https://gohugo.io/templates/internal/)
 

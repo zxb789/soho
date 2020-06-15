@@ -1,13 +1,7 @@
 {{ define "main" -}}
 <ul class="posts">
   <h1>{{ .Title }}</h1>
-  {{ $regularPages := .Data.Pages -}}
-  {{ $pagesNotHidden := where $regularPages ".Params.hidden" "==" false }}
-  {{ $pagesHiddenUnset := where $regularPages ".Params.hidden" "==" nil }}
-
-  {{ $pages := $pagesNotHidden | union $pagesHiddenUnset }}
-
-  {{ range $pages -}}
+  {{ range .Data.Pages -}}
   <li>
     <span>
         <a href="{{ .Permalink }}">{{ .Title }}</a>

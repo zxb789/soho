@@ -214,7 +214,7 @@ ul.posts {
 .pagination {
   justify-content: center;
   display: flex;
-  margin: 1em 0;
+  margin: 1em 0 2rem 0;
   padding: 0;
 }
 

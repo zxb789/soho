@@ -14,7 +14,6 @@ Soho is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](
 - Rich Snippets (JSON-LD)
 - Twitter Card
 - Pagination
-- Hidden Pages
 - Customizable
 - Support all [Hugo Internals](https://gohugo.io/templates/internal/)
 
