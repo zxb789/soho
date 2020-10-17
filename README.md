@@ -1,6 +1,6 @@
 # Soho
 
-Soho is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](https://github.com/spf13/hyde) and inspired by the success of [Flex](https://github.com/alexandrevicenzi/Flex).
+Soho is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](https://github.com/spf13/hyde) inspired by the success of [Flex](https://github.com/alexandrevicenzi/Flex).
 
 ![Screenshot](https://raw.githubusercontent.com/alexandrevicenzi/soho/master/images/tn.png)
 
@@ -9,10 +9,10 @@ Soho is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](
 - Mobile First
 - Responsive
 - Semantic
-- SEO Best Practices
-- Open Graph
-- Rich Snippets (JSON-LD)
-- Twitter Card
+- SEO best practices
+  - Open Graph
+  - Schema.org (Microdata and JSON-LD)
+  - Twitter Card
 - Pagination
 - Customizable
 - Support all [Hugo Internals](https://gohugo.io/templates/internal/)
@@ -27,7 +27,7 @@ Soho is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](
 To install Soho as your default theme, first install this repository in the `themes/` directory:
 
     $ cd themes/
-    $ git clone https://github.com/alexandrevicenzi/soho.git
+    $ git submodule add https://github.com/alexandrevicenzi/soho.git
 
 Second, specify `soho` as your default theme in the `config.toml` file. Just add the line
 
