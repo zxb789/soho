@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BBM3DMYKJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6BBM3DMYKJ');
+</script>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{ hugo.Generator }}
@@ -30,7 +39,7 @@
 
   {{ partial "theme-color.html" . }}
 
-  {{ range $.Site.Params.customCss -}}
+  {{ range $.Site.Params.customCss -}}   
   <link type="text/css" rel="stylesheet" href="{{ . | relURL }}">
   {{- end}}
 
